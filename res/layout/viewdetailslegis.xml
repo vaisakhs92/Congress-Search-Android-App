@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:gravity="end">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/staroff"
+            android:id="@+id/fav"
+            android:layout_weight="0.20" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/f"
+            android:id="@+id/facebook"
+            android:layout_weight="0.18" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/t"
+            android:id="@+id/twitter"
+            android:layout_weight="0.14" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/w"
+            android:id="@+id/earth"
+            android:layout_weight="0.23" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_gravity="top|center_horizontal"
+            android:id="@+id/icon" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="303dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/partyicon"
+                android:layout_weight="0.05"
+                android:paddingLeft="90dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullparty"
+                android:layout_weight="0.02"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textView13"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/fullname"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Email:"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Chamber:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView131" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:id="@+id/chamber" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Contact:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textV4iew13"
+                android:paddingTop="25dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:width="300dp"
+                android:id="@+id/contact"
+                android:paddingTop="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Start term:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textVi22ew11" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:id="@+id/startterm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="End term:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textVi34w24131" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/endterm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Term:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textVie42w11" />
+
+            <ProgressBar
+                android:text="TextView"
+                android:progressDrawable="@drawable/progressstyle"
+                android:layout_width="170dp"
+                android:minHeight="28dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/term" />
+            <TextView
+                android:id="@+id/myTextProgress"
+                android:text="40%"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/term" android:layout_alignTop="@id/term"
+                android:layout_alignRight="@id/term" android:layout_alignBottom="@id/term"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Office:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textVie2fw131" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:id="@+id/office" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="25dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="State:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textV4iefvw13" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:id="@+id/state" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:text="Fax:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViffv22ew11" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fax" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:text="Birthday:"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:textStyle="normal|bold"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24131" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/nav_header_vertical_spacing"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthday" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

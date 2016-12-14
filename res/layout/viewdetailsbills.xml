@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/staroff"
+                android:id="@+id/fav"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="303dp"
+                android:layout_height="40dp">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Bill ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textView13"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/billid"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Title:"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:gravity="end"
+                    android:paddingRight="5dp"
+                    android:width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Bill Type:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView131" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:id="@+id/billtype" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Sponsor:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textV4iew13"
+                    android:paddingTop="25dp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:id="@+id/sponsor"
+                    android:paddingTop="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Chamber:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVi22ew11" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:id="@+id/chamber" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Status"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVi34w24131" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Introduced on:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVie42w11" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:id="@+id/introducedon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Congress URL:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVie2fw131" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:id="@+id/congressurl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="25dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Version Status:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/textV4iefvw13" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:paddingRight="5dp"
+                    android:id="@+id/versionstatus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:text="Bill URL:"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViffv22ew11" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/nav_header_vertical_spacing"
+                    android:gravity="end"
+                    android:width="300dp"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/billurl" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
